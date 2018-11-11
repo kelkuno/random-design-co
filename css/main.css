@@ -10,89 +10,6 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-/* ==========================================================================
-   Globals
-   ========================================================================== */
-@font-face {
-    font-family: "Roboto";
-    src: url("https://fonts.googleapis.com/css?family=Roboto:400,500,700,900");
-}
-   html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
-    font-family: "Roboto";
-}
-/* ==========================================================================
-   Header Section: logo + main nav
-   ========================================================================== */
-header {
-    background: black;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 100px;
-    color: white;
-    line-height: 1;
-}
-/*! Logo */
-h1 {
-    font-weight: 900;
-    text-transform: uppercase;
-    padding: 0 0 0 1em;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    transform: translate(0%, -50%);
-}
-/*! Main Nav */
-ul {
-    font-family: "Roboto";
-    list-style: none;
-    display: none;
-    position: absolute;
-}
-i {
-    position: absolute;
-    margin: 0;
-    top: 50%;
-    right: 0;
-    transform: translate(0%, -50%);
-    font-size: 2em;
-    padding: 0 1em 0 0;
-}
-i:hover ul {
-    display: block;
-    position: absolute;
-    background-color: black;
-    top: 0;
-    right: 0;
-    padding: 1rem;
-}
-i:hover ul li {
-    font-size: 1.3rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    padding: 1rem;
-}
-a:link {
-    color: white;
-    text-decoration: none;
-}
-a:visited {
-    color: white;
-}
-a:hover {
-    text-decoration: underline;
-}
-a:active {
-    color: blue;
-}
-/* ==========================================================================
-   Next Seciton 
-   ========================================================================== */
-
-
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -174,6 +91,213 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+
+/* ==========================================================================
+   Globals
+   ========================================================================== */
+
+   html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+     
+   @font-face {
+    font-family: "Roboto";
+    src: url("https://fonts.googleapis.com/css?family=Roboto:400,500,700,900");
+}
+   html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: "Roboto";
+}
+section {
+    border-bottom: dotted grey 1px;
+}
+.web-content {
+    z-index: -1;
+    position: absolute;
+    top: 100px;
+}
+body {
+    width: 800px;
+}
+
+/* ==========================================================================
+   Header Section: logo + main nav
+   ========================================================================== */
+header {
+    background: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    color: white;
+    line-height: 1;
+    z-index: 1;
+}
+/*! Logo */
+h1 {
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 0 0 0 1em;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+/*! Main Nav */
+ul {
+    font-family: "Roboto";
+    list-style: none;
+    display: none;
+    position: absolute;
+}
+i {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    right: 0;
+    transform: translate(0%, -50%);
+    font-size: 2em;
+    padding: 0 1em 0 0;
+}
+i:hover ul {
+    display: block;
+    position: absolute;
+    background-color: black;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+}
+i:hover ul li {
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+a:link {
+    color: white;
+    text-decoration: none;
+}
+a:visited {
+    color: white;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:active {
+    color: blue;
+}
+/* ==========================================================================
+   Section: Be Random & About Us
+   ========================================================================== */
+h2 {
+    font-size: 5em;
+    text-transform: uppercase;
+    line-height: 1;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+
+}
+h4 {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 2.5em;
+    padding: 20px 35px;
+    border: solid white 4px;
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+}
+h4:hover {
+    color: black;
+    background-color: white;
+}
+
+.section-1 {
+    display: flex;
+    flex-direction: column;
+    width: 640px;
+    
+}
+.part-1 {
+    border: solid blue 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("../img/purple-bg.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 640px;
+    height: 480px;
+}
+.part-2 {
+    border: solid pink 2px;
+    width: 560px;
+    padding: 40px;
+
+
+}
+.orange {
+    border: solid green 1px;
+    display: flex;
+    width: 100%;
+}
+.apple {
+    border: solid yellow 1px;
+    width: 100%;
+    
+}
+a.extra {
+    text-decoration: none;
+}
+h3 {
+    text-transform: uppercase;
+}
+.part-2 p {
+    line-height: 1.5em;
+}
+
+  
+
+/* ==========================================================================
+   Section: photogallery 
+   ========================================================================== */
+.grape {
+    display:flex;
+    flex-direction: column;
+} 
+.stem {
+    flex: 1;
+    border: solid black 2px;
+    display: flex;
+}
+figure {
+    flex: 1;
+}
+figure img {
+    width: 100px;
+}
+
+/* ==========================================================================
+   Section: footer
+   ========================================================================== */
+.banner {
+    display:flex;
+   
+    background: white;
+
+}
+.text {
+    display: 1;
+    margin: auto;
+   
+}
 
 
 
