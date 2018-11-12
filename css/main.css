@@ -117,14 +117,15 @@ textarea {
 section {
     border-bottom: dotted grey 1px;
 }
+body {
+    position: relative;
+}
 .web-content {
     z-index: -1;
     position: absolute;
     top: 100px;
 }
-body {
-    width: 800px;
-}
+
 
 /* ==========================================================================
    Header Section: logo + main nav
@@ -195,94 +196,66 @@ a:active {
 /* ==========================================================================
    Section: Be Random & About Us
    ========================================================================== */
-h2 {
-    font-size: 5em;
-    text-transform: uppercase;
-    line-height: 1;
-    margin: 0 auto;
-    text-align: center;
-    color: white;
+.jumbotron {
+    position: relative;
 
+}
+img {
+    width: 100%;
+}
+.jumbotron-bg {
+    display: block;
+    position: relative;
+    z-index: -10;
+}
+.jumbotron-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+h2 {
+    text-transform: uppercase;
+    font-size: 5.5em;
+    color: white;
+    line-height: 1;
+    text-align: center;
+    margin: 0 0 10% 0;
 }
 h4 {
     text-transform: uppercase;
     font-weight: 500;
-    font-size: 2.5em;
-    padding: 20px 35px;
-    border: solid white 4px;
-    width: 200px;
-    margin: 0 auto;
+    font-size: 2em;
     text-align: center;
+    border: solid white 3px;
+    display: block;
+    margin: 0 15%;
+    padding: 25px 30px;
+    line-height: 1;
 }
 h4:hover {
     color: black;
     background-color: white;
 }
-
-.section-1 {
-    display: flex;
-    flex-direction: column;
-    width: 640px;
-    
-}
-.part-1 {
-    border: solid blue 2px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-image: url("../img/purple-bg.jpeg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    width: 640px;
-    height: 480px;
-}
-.part-2 {
-    border: solid pink 2px;
-    width: 560px;
-    padding: 40px;
-
-
-}
-.orange {
-    border: solid green 1px;
-    display: flex;
-    width: 100%;
-}
-.apple {
-    border: solid yellow 1px;
-    width: 100%;
-    
-}
-a.extra {
+.section-a a {
     text-decoration: none;
 }
-h3 {
+.section-a h3 {
     text-transform: uppercase;
+    padding: 50px 15px 0 15px;
+    margin: 0;
 }
-.part-2 p {
-    line-height: 1.5em;
+.section-a p {
+    line-height: 1.5;
+    font-size: 1.2em;
+    padding: 0 15px;
+    margin: 0 0 50px 0;
 }
-
-  
 
 /* ==========================================================================
    Section: photogallery 
    ========================================================================== */
-.grape {
-    display:flex;
-    flex-direction: column;
-} 
-.stem {
-    flex: 1;
-    border: solid black 2px;
-    display: flex;
-}
-figure {
-    flex: 1;
-}
-figure img {
-    width: 100px;
-}
+
 
 /* ==========================================================================
    Section: footer
