@@ -250,7 +250,7 @@ h4:hover {
    ========================================================================== */
 .project {
     position: relative;
-    background-color: hsl(0,0%,100%,.8);
+    background-color: hsla(0,0%,100%,.8);
     width: 50%;
     float: left;	
     border: white solid 2px;
@@ -267,7 +267,7 @@ h4:hover {
     position: relative;
 }
 .project:hover {
-    background-color: hsl(0,0%,100%,0);	
+    background-color: hsla(0,0%,100%,0);	
     color: white;
 }
 .section-b {
