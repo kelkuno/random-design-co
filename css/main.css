@@ -101,10 +101,8 @@ textarea {
   }
   *, *:before, *:after {
     box-sizing: inherit;
-  }
-  
-     
-   @font-face {
+  }     
+@font-face {
     font-family: "Roboto";
     src: url("https://fonts.googleapis.com/css?family=Roboto:400,500,700,900");
 }
@@ -125,8 +123,9 @@ body {
     position: absolute;
     top: 100px;
 }
-
-
+h1, h2, h3, h4 {
+    text-transform: uppercase;
+}
 /* ==========================================================================
    Header Section: logo + main nav
    ========================================================================== */
@@ -143,7 +142,6 @@ header {
 /*! Logo */
 h1 {
     font-weight: 900;
-    text-transform: uppercase;
     padding: 0 0 0 1em;
     margin: 0;
     position: absolute;
@@ -198,7 +196,6 @@ a:active {
    ========================================================================== */
 .jumbotron {
     position: relative;
-
 }
 img {
     width: 100%;
@@ -215,7 +212,6 @@ img {
     transform: translate(-50%, -50%);
 }
 h2 {
-    text-transform: uppercase;
     font-size: 5.5em;
     color: white;
     line-height: 1;
@@ -223,7 +219,6 @@ h2 {
     margin: 0 0 10% 0;
 }
 h4 {
-    text-transform: uppercase;
     font-weight: 500;
     font-size: 2em;
     text-align: center;
@@ -241,7 +236,6 @@ h4:hover {
     text-decoration: none;
 }
 .section-a h3 {
-    text-transform: uppercase;
     padding: 50px 15px 0 15px;
     margin: 0;
 }
@@ -251,25 +245,47 @@ h4:hover {
     padding: 0 15px;
     margin: 0 0 50px 0;
 }
-
 /* ==========================================================================
    Section: photogallery 
    ========================================================================== */
-
-
+.project {
+    position: relative;
+    background-color: hsl(0,0%,100%,.8);
+    width: 50%;
+    float: left;	
+    border: white solid 2px;
+}
+.project-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.project-img {
+    z-index: -20;
+    display: block;
+    position: relative;
+}
+.project:hover {
+    background-color: hsl(0,0%,100%,0);	
+    color: white;
+}
+.section-b {
+    overflow: auto;
+    padding: 0 15px 50px 15px;
+}
+.section-b h3 {
+    margin: 0;
+    padding: 50px 15px 15px 15px;
+}
 /* ==========================================================================
    Section: footer
    ========================================================================== */
-.banner {
-    display:flex;
-   
-    background: white;
-
+.footer-banner {
+    display: flex;
 }
-.text {
-    display: 1;
+.footer-text {
     margin: auto;
-   
 }
 
 
