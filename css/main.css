@@ -224,7 +224,6 @@ h4 {
     text-align: center;
     border: solid white 3px;
     display: block;
-    margin: 0 15%;
     padding: 25px 30px;
     line-height: 1;
 }
@@ -248,12 +247,16 @@ h4:hover {
 /* ==========================================================================
    Section: photogallery 
    ========================================================================== */
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+}
 .project {
+    flex: 1 1 50%;
     position: relative;
     background-color: hsla(0,0%,100%,.8);
-    width: 50%;
-    float: left;	
     border: white solid 2px;
+    max-width: 50%;
 }
 .project-content {
     position: absolute;
